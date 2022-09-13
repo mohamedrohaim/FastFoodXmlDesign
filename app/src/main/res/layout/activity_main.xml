@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Calculate Calories" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="120 cal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#EC9009"
+
+
+        />
+    <ImageView
+        android:id="@+id/leftImg"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:src="@drawable/img1"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/img2"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/leftImg"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/img3"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/leftImg"
+        />
+
+</RelativeLayout>
